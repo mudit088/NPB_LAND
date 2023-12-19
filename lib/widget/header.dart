@@ -17,31 +17,42 @@ class HeaderWidget extends StatelessWidget {
     return Container(
       
       decoration: BoxDecoration(
-        color: Color.fromARGB(255, 52, 53, 54), // Set the background color to blue
+        color: Color.fromARGB(255, 0, 0, 0), // Set the background color to blue
       ),
    child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              SizedBox(
-                width: 60,
-                height: 60,
-                child: Image.network('icons/location-pin.png'),
-              ),
-              const SizedBox(width: 8), // Add some space between icon and text
-              const Text(
-                'Land Registry',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 32,
-                  fontStyle: FontStyle.normal,
-                  color: Color.fromARGB(255, 255, 255, 255),
-                ),
-              ),
-            ],
-          ),
-
+         Row(
+  children: <Widget>[
+    SizedBox(
+      width: 70,
+      height: 70,
+      child: Image.network('icons/NPB_Transparent.png'),
+    ),
+    const SizedBox(width: 8), // Add some space between icon and text
+    const Text(
+      'NoPlayButton',
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 32,
+        fontStyle: FontStyle.normal,
+        color: Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
+    Padding(
+      padding: EdgeInsets.only(left: 400), 
+      child: const Text(
+        'Land Registry',
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 32,
+          fontStyle: FontStyle.normal,
+          color: Color.fromARGB(255, 255, 255, 255),
+        ),
+      ),
+    ),
+  ],
+),
         Row(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -167,7 +178,7 @@ class HeaderWidget extends StatelessWidget {
                     appContainer?.style.cursor = 'default';
                   },
                   child: const Text(
-                    'About',
+                    '',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       color: Color.fromARGB(255, 255, 255, 255),

@@ -20,7 +20,7 @@ class _home_pageState extends State<home_page> {
       isDesktop = true;
     }
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255, 1, 1, 52),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -79,42 +79,42 @@ class _home_pageState extends State<home_page> {
                 
                 
                 
-                CustomAnimatedContainer('Contract Owner', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "owner",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "owner",
-                  );
-                }),
-                CustomAnimatedContainer('Land Inspector', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "LandInspector",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "LandInspector",
-                  );
-                }),
-                CustomAnimatedContainer('User', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "UserLogin",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "UserLogin",
-                  );
-                }),
+                // CustomAnimatedContainer('Contract Owner', () {
+                //   // Navigator.push(
+                //   //     context,
+                //   //     MaterialPageRoute(
+                //   //         builder: (context) => const CheckPrivateKey(
+                //   //               val: "owner",
+                //   //             )));
+                //   Navigator.of(context).pushNamed(
+                //     '/login',
+                //     arguments: "owner",
+                //   );
+                // }),
+                // CustomAnimatedContainer('Land Inspector', () {
+                //   // Navigator.push(
+                //   //     context,
+                //   //     MaterialPageRoute(
+                //   //         builder: (context) => const CheckPrivateKey(
+                //   //               val: "LandInspector",
+                //   //             )));
+                //   Navigator.of(context).pushNamed(
+                //     '/login',
+                //     arguments: "LandInspector",
+                //   );
+                // }),
+                // CustomAnimatedContainer('User', () {
+                //   // Navigator.push(
+                //   //     context,
+                //   //     MaterialPageRoute(
+                //   //         builder: (context) => const CheckPrivateKey(
+                //   //               val: "UserLogin",
+                //   //             )));
+                //   Navigator.of(context).pushNamed(
+                //     '/login',
+                //     arguments: "UserLogin",
+                //   );
+                // }),
               ],
             ),
             ),

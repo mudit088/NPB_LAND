@@ -47,17 +47,17 @@ Blockchain''',
               child: Container(
                   width: 150,
                   height: 57,
-                  child: const Center(
-                    child: Text("Learn More",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Color(0xffffffff),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 2,
-                        )),
-                  ),
+                 
+                    child: Image.network('icons/github.png'),
+                        // style: TextStyle(
+                        //   fontFamily: 'Poppins',
+                        //   color: Color(0xffffffff),
+                        //   fontSize: 14,
+                        //   fontWeight: FontWeight.w400,
+                        //   fontStyle: FontStyle.normal,
+                        //   letterSpacing: 2,
+                        // ),
+                  
                   decoration: BoxDecoration(
                       color: const Color(0xff47afc9),
                       borderRadius: BorderRadius.circular(8))),
@@ -66,7 +66,48 @@ Blockchain''',
             const SizedBox(width: 40),
             GestureDetector(
               onTap: () {
-                launchUrl("https://youtu.be/0Coz_ivOaHs");
+                launchUrl("");
+              },
+              child: MouseRegion(
+                onHover: (PointerHoverEvent evt) {
+                  appContainer?.style.cursor = 'pointer';
+                },
+                onExit: (PointerExitEvent evt) {
+                  appContainer?.style.cursor = 'default';
+                },
+                child: Row(
+                  children: const [
+                    SizedBox(
+                      width: 34,
+                      height: 34,
+                       child: Icon(Icons.play_circle_fill),
+                      
+                    ),
+                    SizedBox(
+                      width: 10,
+                      
+                    ),
+                    Text("NPB_ml",
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          color: Color(0xff47afc9),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
+                          letterSpacing: 2,
+                        )
+                        )
+                        
+                  ],
+                ),
+                
+              ),
+            ),
+
+
+            GestureDetector(
+              onTap: () {
+                launchUrl("");
               },
               child: MouseRegion(
                 onHover: (PointerHoverEvent evt) {
@@ -86,7 +127,115 @@ Blockchain''',
                     SizedBox(
                       width: 10,
                     ),
-                    Text("Watch demo",
+                    Text("Bored??",
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          color: Color(0xff47afc9),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
+                          letterSpacing: 2,
+                        ))
+                  ],
+                ),
+              ),
+            ),
+
+            GestureDetector(
+              onTap: () {
+                launchUrl("");
+              },
+              child: MouseRegion(
+                onHover: (PointerHoverEvent evt) {
+                  appContainer?.style.cursor = 'pointer';
+                },
+                onExit: (PointerExitEvent evt) {
+                  appContainer?.style.cursor = 'default';
+                },
+                child: Row(
+                  children: const [
+                    SizedBox(
+                      width: 34,
+                      height: 34,
+                       child: Icon(Icons.play_circle_fill),
+                      
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text("Watch Demo",
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          color: Color(0xff47afc9),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
+                          letterSpacing: 2,
+                        ))
+                  ],
+                ),
+              ),
+            ),
+
+            GestureDetector(
+              onTap: () {
+                launchUrl("");
+              },
+              child: MouseRegion(
+                onHover: (PointerHoverEvent evt) {
+                  appContainer?.style.cursor = 'pointer';
+                },
+                onExit: (PointerExitEvent evt) {
+                  appContainer?.style.cursor = 'default';
+                },
+                child: Row(
+                  children: const [
+                    SizedBox(
+                      width: 34,
+                      height: 34,
+                       child: Icon(Icons.play_circle_fill),
+                      
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text("NBP_EVault",
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          color: Color(0xff47afc9),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
+                          letterSpacing: 2,
+                        ))
+                  ],
+                ),
+              ),
+            ),
+
+            GestureDetector(
+              onTap: () {
+                launchUrl("");
+              },
+              child: MouseRegion(
+                onHover: (PointerHoverEvent evt) {
+                  appContainer?.style.cursor = 'pointer';
+                },
+                onExit: (PointerExitEvent evt) {
+                  appContainer?.style.cursor = 'default';
+                },
+                child: Row(
+                  children: const [
+                    SizedBox(
+                      width: 34,
+                      height: 34,
+                       child: Icon(Icons.play_circle_fill),
+                      
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text("NBP_NFT",
                         style: TextStyle(
                           fontFamily: 'Poppins',
                           color: Color(0xff47afc9),
